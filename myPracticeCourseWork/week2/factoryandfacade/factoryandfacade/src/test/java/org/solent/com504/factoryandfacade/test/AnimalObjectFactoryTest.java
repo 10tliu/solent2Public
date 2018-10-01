@@ -51,9 +51,4 @@ public class AnimalObjectFactoryTest {
         assertEquals("Moo", sound);
 
     }
-    @Test
-    public void testCreateFarmFacade() {
-        FarmFacade ff = AnimalObjectFactory.createFarmFacade();
-        assertNotNull (ff);
-    }
 }

@@ -22,7 +22,13 @@ public class FarmFacadeTest {
         FarmFacade farmFacade = AnimalObjectFactory.createFarmFacade();
         assertNotNull(farmFacade);
         
-        // WHAT TESTS WOULD YOU CREATE HERE TO SET UP AND TEST THE FARM FACADE?
+       
 
+    }
+    
+    @Test
+    public void createFarmFacade(){
+        FarmFacade ff = AnimalObjectFactory.createFarmFacade();
+        assertNotNull (ff);
     }
 }
