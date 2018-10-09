@@ -9,6 +9,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.solent.com504.factoryandfacade.model.Animal;
 import org.solent.com504.factoryandfacade.model.AnimalObjectFactory;
+import org.solent.com504.factoryandfacade.model.FarmFacade;
 
 /**
  *
@@ -50,5 +51,11 @@ public class AnimalObjectFactoryTest {
 
         assertEquals("Moo", sound);
 
+    }
+    
+    @Test
+    public void testCreateFarmFacade(){ 
+        FarmFacade ff = AnimalObjectFactory.createFarmFacade();
+        assertNotNull (ff);
     }
 }

@@ -5,6 +5,7 @@
  */
 package org.solent.com504.factoryandfacade.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,20 +14,28 @@ import java.util.List;
  */
 public class FarmFacadeImpl implements FarmFacade{
 
+    private List<Animal> listOfAnimals = new ArrayList<Animal>();
+        
     public List<Animal> getAllAnimals() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return  listOfAnimals;
     }
 
     public void addDog(String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Animal dog = AnimalObjectFactory.createDog();
+        dog.setName(name);
+        listOfAnimals.add(dog);
     }
 
     public void addCat(String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Animal cat = AnimalObjectFactory.createCat();
+        cat.setName(name);
+        listOfAnimals.add(cat);
     }
 
     public void addCow(String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Animal cow = AnimalObjectFactory.createCow();
+        cow.setName(name);
+        listOfAnimals.add(cow);
     }
-    
+  
 }

@@ -1,5 +1,6 @@
 package org.solent.com504.factoryandfacade.test;
 
+import java.util.List;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,18 +18,27 @@ import org.solent.com504.factoryandfacade.model.FarmFacade;
 public class FarmFacadeTest {
 
     @Test
-    public void FarmFacadeTest() {
+    public void farmFacadeTest() {
 
-        FarmFacade farmFacade = AnimalObjectFactory.createFarmFacade();
-        assertNotNull(farmFacade);
-        
-       
-
-    }
-    
-    @Test
-    public void createFarmFacade(){
         FarmFacade ff = AnimalObjectFactory.createFarmFacade();
-        assertNotNull (ff);
+        assertNotNull(ff);
+        
+        ff.addDog("Poppy");
+        
+        ff.addCat("Seth");
+        
+        ff.addCow("Daisy");
+        
+        List<Animal> animalList = ff.getAllAnimals();
+        assertNotNull (animalList);
+        
+        for (Animal a : animalList) {
+
+            System.out.println("animal '" + a.getName()
+                    + "' makes this sound '" + a.getSound()
+                    + "' because it is a '" + a.getClass().getSimpleName()
+                    + "' implemented by " + a.getClass().getTypeName());
+        }
+
     }
 }
