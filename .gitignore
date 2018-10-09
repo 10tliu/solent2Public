@@ -37,3 +37,7 @@ nb-configuration.xml
 *.war
 *.ear
 *.zip
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
