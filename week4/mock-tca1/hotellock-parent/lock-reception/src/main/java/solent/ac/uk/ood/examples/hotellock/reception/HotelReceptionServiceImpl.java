@@ -20,12 +20,14 @@ public class HotelReceptionServiceImpl implements HotelReceptionService {
     
     @Override
     public String createCardCode(String roomNumber, Date startDate, Date endDate) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //implements a method from HotelReceptionService
+        HotelReceptionService.createCardCode(String roomNumber, Date startDate, Date endDate);
     }
 
     @Override
     public CardKey readCard(String cardCode) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //implements a method from HotelReceptionService
+        HotelReceptionService.readCard(String cardCode);
     }
 
     @Override
