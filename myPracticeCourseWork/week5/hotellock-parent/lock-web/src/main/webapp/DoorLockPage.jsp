@@ -67,7 +67,10 @@
             <input type="submit" value="Unlock Door">
         </form> 
         <br>
-        <div id="result"></div>
-
+        <%if (doorUnlocked){%>
+        <p>"Door Unlocked"<p/>
+        <%}else {%>
+        <p>"Door Locked<p/>
+        <%}%>
     </body>
 </html>

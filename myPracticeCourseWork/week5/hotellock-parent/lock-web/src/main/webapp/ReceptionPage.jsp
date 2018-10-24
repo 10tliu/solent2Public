@@ -24,7 +24,7 @@ https://docs.oracle.com/javaee/1.3/tutorial/doc/JSPIntro11.html
 
 <%
     // this is java code used to initialise and drive the page.
-    // geneally it is good practice to not put too much logic in the JSP and use helper classes instead
+    // generally it is good practice to not put too much logic in the JSP and use helper classes instead
     // however we have put all of the logic here as an example
 
     // we store objects in the session if we want the to persist for the user between page actions
