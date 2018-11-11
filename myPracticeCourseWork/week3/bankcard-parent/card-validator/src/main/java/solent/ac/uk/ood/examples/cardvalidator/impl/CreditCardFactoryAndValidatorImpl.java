@@ -71,8 +71,8 @@ public class CreditCardFactoryAndValidatorImpl implements CreditCardFactoryAndVa
         //assertEquals(result.getCardType(),CardCompany.VISA );
         String ccNumber = card.getCardnumber();
         CardValidationResult result = RegexCardValidator.isValid(ccNumber);
-        if(result.getCardType().equals(CardCompany.VISA))return CardOrganisation.VISA
-        //do this for all ca
+        if(result.getCardType().equals(CardCompany.VISA))return CardOrganisation.VISA;
+        //do this for all cards
     }
 
     @Override
